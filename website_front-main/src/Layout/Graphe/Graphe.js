@@ -50,14 +50,9 @@ const options = {
 
 const Graphe = () => {
   return (
-    <>
-      <div>
-        <span>테스트</span>
-      </div>
-      <div style={{ width: '400px', height: '200px', margin: '0 auto' }}>
-        <Line data={data} options={options} />
-      </div>
-    </>
+    <div style={{ width: '400px', height: '200px', margin: '0 auto' }}>
+      <Line data={data} options={options} />
+    </div>
   );
 };
 

@@ -1,8 +1,8 @@
 .mainlayout-container {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    flex-direction: low;
+    justify-content: center;
+    flex-direction: row;
 
-    padding: 45px 75px;
+    
 }

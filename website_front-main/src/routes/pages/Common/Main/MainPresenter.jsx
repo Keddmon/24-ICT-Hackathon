@@ -11,13 +11,15 @@ const MainPresenter = ({
 }) => {
 
     return (
-        <>
-        <Kakao
-            data={data}
-            navigate={navigate}
-        />
-        <Graphe />
-        </>
+        <div className="main-container">
+            <Kakao
+                data={data}
+                navigate={navigate}
+            />
+            <Graphe
+            
+            />
+        </div>
 
     );
 };
