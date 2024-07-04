@@ -16,9 +16,9 @@ const MainPresenter = ({
                 data={data}
                 navigate={navigate}
             />
-            <Graphe
+            {/* <Graphe
             
-            />
+            /> */}
         </div>
 
     );

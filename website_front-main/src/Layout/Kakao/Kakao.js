@@ -10,7 +10,7 @@ const Kakao = ({
         const container = document.getElementById('map');
         const options = {
             center: new kakao.maps.LatLng(35.103535, 129.042373),
-            level: 10
+            level: 7
         };
 
         const map = new kakao.maps.Map(container, options);
@@ -46,8 +46,8 @@ const Kakao = ({
     return (
         <>
             <div id="map" style={{
-                width: '1080px',
-                height: '700px',
+                width: '100%',
+                height: '100%',
                 borderRadius: '4px',
             }}>
 

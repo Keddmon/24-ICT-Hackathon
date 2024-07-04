@@ -1,15 +1,14 @@
-import { MainLayout } from "../../../../Layout";
-import WarningImage from "./components/WarningImage";
+import { ImageBox } from "../../../../Layout";
 
 const WarningsPresenter = ({
     id,
     data,
 }) => {
     return (
-        <div>
-            <WarningImage
-                id={id}
-                data={data}
+        <div className="warnings-container">
+            <ImageBox
+                src={data.positions[id].image}
+                content={data.positions[id].content}
             />
         </div>
     );

@@ -2,15 +2,15 @@ import Header from "../Header";
 import SideBar from "../SideBar";
 import "./MainLayout.css";
 
-const MainLayout = ({
-    children
-}) => {
+const MainLayout = ({ children }) => {
     return (
         <>
             <Header />
-            <SideBar />
             <div className="mainlayout-container">
-                {children}
+                <SideBar />
+                <div className="content-container">
+                    {children}
+                </div>
             </div>
         </>
     );

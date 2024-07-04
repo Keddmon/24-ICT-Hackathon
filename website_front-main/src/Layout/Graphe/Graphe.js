@@ -25,7 +25,12 @@ ChartJS.register(
   Legend
 );
 
-const Graphe = () => {
+const Graphe = ({
+  title,
+  text,
+  labels,
+  datas,
+}) => {
   const[selectMonth, setSelectMonth]= useState(null);
   const navigate = useNavigate();
 
@@ -45,11 +50,11 @@ const Graphe = () => {
 
 
   const data = {
-    labels: ['5', '6'],
+    labels: labels, // ['5', '6']
     datasets: [
       {
-        label: '위험사건 발생 추이',
-        data: [2, 1], // 5월: 2, 6월: 1
+        label: title,
+        data: datas, // 5월: 2, 6월: 1 [2, 1]
         borderColor: 'rgba(75, 192, 192, 1)',
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderDash: [5, 5], // 점선 설정
@@ -65,7 +70,7 @@ const Graphe = () => {
       },
       title: {
         display: true,
-        text: '사건 발생 차트',
+        text: text,
       },
     },
     onClick: () => navigate('/datewarnings/1')
@@ -78,7 +83,7 @@ const Graphe = () => {
   };
 
   return (
-    <div style={{ width: '400px', height: '200px', margin: '0 auto' }}>
+    <div style={{ width: '500px', height: '300px', margin: '0 auto' }}>
       <Line data={data} options={options} />
     </div>
   );

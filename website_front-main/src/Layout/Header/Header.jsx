@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({
@@ -13,10 +14,10 @@ const Header = ({
                 </ul>
                 <div className="header-time-box">
                     <div className="header-today">
-                        <span>오늘</span>
+                        <span><Link to="/">오늘</Link></span>
                     </div>
                     <div className="header-time">
-                        2024.04.14.18:09
+                        2024. 07. 05. 08:04
                     </div>
                 </div>
                 <ul>
