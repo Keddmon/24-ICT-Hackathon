@@ -1,0 +1,37 @@
+website_front-main/node_modules
+website_front-main/.pnp
+website_front-main/.pnp.js
+
+# testing
+website_front-main//coverage
+
+# production
+website_front-main//build
+
+# misc
+website_front-main/.DS_Store
+website_front-main/.env.local
+website_front-main/.env.development.local
+website_front-main/.env.test.local
+website_front-main/.env.production.local
+
+website_front-main/npm-debug.log*
+website_front-main/yarn-debug.log*
+website_front-main/yarn-error.log*
+
+
+# .env*
+website_back/dist
+website_back/package-lock.json
+website_back/node_modules
+website_back/.idea
+website_back/.vscode
+website_back/*.log
+website_back/yarn.lock
+website_back/config/config.json
+website_back/build
+website_back/logs
+website_back//src/temp/
+website_back/.DS_Store
+
+website_back/prisma/docker-compose.local.yml
