@@ -1,13 +1,16 @@
 import { MainLayout } from "../../../../Layout";
 
 const WarningsPresenter = ({
-    id
+    id,
+    data,
 }) => {
+    const imgUrl = data.positions[id];
+    console.log(imgUrl.image)
+
+    console.log(data.positions[id].image)
     return (
         <div>
-            <span>
-            {id}입니다
-            </span>
+            <img src={imgUrl.image}/>
         </div>
     );
 };

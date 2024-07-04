@@ -38,7 +38,7 @@ const Router = () => {
                         element={<Main />}
                     />
                     <Route
-                        path="`/warnings/:id"
+                        path="/warnings/:id"
                         element={<Warnings />}
                     />
                 </Routes>
