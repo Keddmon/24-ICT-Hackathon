@@ -21,17 +21,17 @@ website_front-main/yarn-error.log*
 
 
 # .env*
-website_back/dist
-website_back/package-lock.json
-website_back/node_modules
-website_back/.idea
-website_back/.vscode
-website_back/*.log
-website_back/yarn.lock
-website_back/config/config.json
-website_back/build
-website_back/logs
-website_back//src/temp/
-website_back/.DS_Store
+website_back-main/dist
+website_back-main/package-lock.json
+website_back-main/node_modules
+website_back-main/.idea
+website_back-main/.vscode
+website_back-main/*.log
+website_back-main/yarn.lock
+website_back-main/config/config.json
+website_back-main/build
+website_back-main/logs
+website_back-main//src/temp/
+website_back-main/.DS_Store
 
-website_back/prisma/docker-compose.local.yml
+website_back-main/prisma/docker-compose.local.yml

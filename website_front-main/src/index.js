@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
+import { MainLayout } from './Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
