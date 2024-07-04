@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Routes, useFetcher } from 'react-router-dom';
 
 /* 사용자가 만든 페이지를 모아놓은 파일에서 페이지를 불러온다. */
-import { Main, Warnings } from "./pages";
+import { Datewarnings, Main, Warnings } from "./pages";
 import { MainLayout } from "../Layout";
 
 /* 아래 부분에서 링크와 페이지를 연결시킨다. */
@@ -40,6 +40,10 @@ const Router = () => {
                     <Route
                         path="/warnings/:id"
                         element={<Warnings />}
+                    />
+                    <Route
+                        path="/datewarnings/:id"
+                        element={<Datewarnings />}
                     />
                 </Routes>
         </div>
