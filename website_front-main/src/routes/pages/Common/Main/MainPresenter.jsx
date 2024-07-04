@@ -1,7 +1,7 @@
 import React from "react";
 
 import './Main.css';
-import { Kakao } from "../../../../Layout";
+import { Graphe, Kakao } from "../../../../Layout";
 
 
 
@@ -11,11 +11,13 @@ const MainPresenter = ({
 }) => {
 
     return (
-
+        <>
         <Kakao
             data={data}
             navigate={navigate}
         />
+        <Graphe />
+        </>
 
     );
 };
