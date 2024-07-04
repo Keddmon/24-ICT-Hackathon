@@ -7,3 +7,4 @@
 export { default as Main } from './Common/Main';
 export { default as Warnings } from "./Common/Warnings";
 export { default as Datewarnings } from "./Common/DateWarnings"
+export { default as DataChart} from './Common/DataChart';

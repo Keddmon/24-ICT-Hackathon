@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Routes, useFetcher } from 'react-router-dom';
 
 /* 사용자가 만든 페이지를 모아놓은 파일에서 페이지를 불러온다. */
-import { Datewarnings, Main, Warnings } from "./pages";
+import { Datewarnings, Main, Warnings, DataChart } from "./pages";
 import { MainLayout } from "../Layout";
 
 /* 아래 부분에서 링크와 페이지를 연결시킨다. */
@@ -20,7 +20,7 @@ const Router = () => {
     /* 출력할 페이지 설정 부분 */
     return (
         /* 리액트의 경우 return에 존재하는 최상위 태그는 하나여야 한다. */
-        <div className="app">
+        <MainLayout>
                 <Routes>
                     {/* 
                     path: URL
@@ -45,8 +45,12 @@ const Router = () => {
                         path="/datewarnings/:id"
                         element={<Datewarnings />}
                     />
+                    <Route
+                        path='./datachart'
+                        element={<DataChart/>}
+                    />
                 </Routes>
-        </div>
+                </MainLayout>
     )
 }
 
