@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -11,8 +11,6 @@ import {
   Legend,
 } from 'chart.js';
 import { useNavigate } from 'react-router-dom';
-import WarningsContainer from '../../routes/pages/Common/Warnings/WarningsContainer';
-import WarningsPresenter from '../../routes/pages/Common/Warnings/WarningsPresenter';
 
 // Chart.js의 필요한 구성 요소를 등록
 ChartJS.register(
@@ -31,23 +29,7 @@ const Graphe = ({
   labels,
   datas,
 }) => {
-  const[selectMonth, setSelectMonth]= useState(null);
   const navigate = useNavigate();
-
-  const dummy = {
-    "positions": [
-      {
-        "image": ["images/1.png", "images/2.png"],
-        "month": 5
-      },
-      {
-        "image": "images/3.png",
-        "month": 6
-      },
-    ]
-  };
-
-
 
   const data = {
     labels: labels, // ['5', '6']
@@ -74,12 +56,6 @@ const Graphe = ({
       },
     },
     onClick: () => navigate('/datewarnings/1')
-    
-    
-    // onClick: (idx) => {
-    //   const find = dummy.positions.map(idx)
-    //   console.log(dummy.positions[idx].month)
-    // },
   };
 
   return (

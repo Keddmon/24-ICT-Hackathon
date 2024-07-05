@@ -7,7 +7,9 @@ const ImageBox = ({
     return (
         <div className="imagebox-container">
             <div className="imagebox-wrap">
-                <img src={src} />
+                <img
+                    src={src}
+                />
                 <span>
                     {content}
                 </span>

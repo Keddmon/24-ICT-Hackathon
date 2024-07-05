@@ -3,8 +3,6 @@ import "./SideBar.css";
 const SideBar = ({
 
 }) => {
-
-
     return (
         <div className="sidebar-container" >
             <div className="sidebar-box">

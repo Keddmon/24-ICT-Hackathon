@@ -1,4 +1,3 @@
-import Graphe from "../Graphe";
 import Header from "../Header";
 import SideBar from "../SideBar";
 import "./MainLayout.css";
